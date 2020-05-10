@@ -24,7 +24,7 @@ def lambda_handler(event, context):
 	db_order, db_statement = create_db_statement(formData)
 
 	with conn.cursor() as cur:
-		cur.execute("INSERT INTO agents {} VALUES {}".format(db_order, db_statement)
+		cur.execute("INSERT INTO agents {} VALUES {}".format(db_order, db_statement))
 	conn.commit()
 
 	return "All Done"
