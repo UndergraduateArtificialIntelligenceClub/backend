@@ -1,4 +1,4 @@
-import sys, rds_config, logging, pymysql, UUID, random, datetime
+import sys, rds_config, logging, pymysql, uuid, random, datetime
 
 #rds settings
 rds_host = rds_config.db_host
