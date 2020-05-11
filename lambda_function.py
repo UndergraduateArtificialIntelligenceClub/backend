@@ -81,7 +81,7 @@ def validate_form_items(formItems):
 		if formItems['membership'] == 'associate':
 			validItems['memberStatus'] = False
 	else:
-		return False, valdiItems
+		return False, validItems
 
 	if 'email' in formItems and '@' in formItems['email']:
 		validItems['email'] = formItems['email'].lower()
